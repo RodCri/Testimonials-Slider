@@ -8,7 +8,79 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 32px;
-  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 768px;
+  position: relative;
+}
+.container .feedback {
+  position: relative;
+}
+.container .feedback img {
+  height: 60px;
+  position: absolute;
+  top: -40px;
+  left: 50px;
+}
+.container .feedback p {
+  font-size: 18px;
+  color: hsl(240deg, 38%, 20%);
+  font-weight: 300;
+}
+.container .slider-container {
+  position: relative;
+}
+.container .slider-container .navigation {
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+}
+.container .slider-container .navigation img {
+  cursor: pointer;
+  padding: 8px 10px 5px 10px;
+}
+
+.name {
+  color: hsl(240deg, 38%, 20%);
+  padding-top: 15px;
+}
+
+.role {
+  color: hsl(240deg, 18%, 77%);
+  padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    width: 350px;
+    margin: 10px auto;
+  }
+  .container .feedback {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container .feedback img {
+    left: 40%;
+  }
+  .role {
+    display: block;
+  }
+  .navigation {
+    left: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
