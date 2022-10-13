@@ -7,7 +7,7 @@ const users = [
     name: 'Tanya Sinclair',
     role: 'UX Engineer',
     feedback: '“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',
-    image: '../images/image-tanya.jpg'
+    image: './images/image-tanya.jpg'
   },
   {
     name: 'John Tarkpor',
@@ -26,7 +26,7 @@ const navigation = () => {
   <img src="${users[slide].image}" alt="${users[slide].name}">
   `
   feedback.innerHTML = `
-  <img src="/../images/pattern-quotes.svg" alt="">
+  <img src="./images/pattern-quotes.svg" alt="">
   <p>${users[slide].feedback}</p>
   <h4 class="name">${users[slide].name} <span class="role">${users[slide].role}</span></h4>
   `;
